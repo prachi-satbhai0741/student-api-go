@@ -1,0 +1,31 @@
+name: Go Student API CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Build Go app
+        run: go build -o student-api .
+
+      - name: Build Docker image
+        run: docker build -t student-api-go .
+
+      - name: Test container runs
+        run: |
+          docker run -d -p 8080:8080 --name test-go student-api-go
+          sleep 5
+          curl http://localhost:8080/api/students
+          docker stop test-go
