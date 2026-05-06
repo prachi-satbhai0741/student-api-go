@@ -2,18 +2,18 @@
 
 A beginner-friendly production-style Student Management REST API built with Go, Gin, Docker, and GitHub Actions.
 
+![Go](https://img.shields.io/badge/Go-1.22-00ADD8?style=flat&logo=go&logoColor=white)
+![Gin](https://img.shields.io/badge/Gin-Framework-009688?style=flat)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 This project was created to learn:
 - Backend development with Go
 - REST API design
 - Docker containerization
 - CI/CD using GitHub Actions
 - Basic DevOps workflow
-
-![Go](https://img.shields.io/badge/Go-1.22-00ADD8?style=flat&logo=go&logoColor=white)
-![Gin](https://img.shields.io/badge/Gin-Framework-009688?style=flat)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
@@ -71,4 +71,8 @@ student-api-go/
 ├── README.md
 └── LICENSE
 
+---
 
+# Author
+
+## Prachi Satbhai
