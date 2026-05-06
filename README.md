@@ -1,31 +1,74 @@
-# Student API in Go 
+# Student API Go
 
-REST API built with Go and Gin framework.
-Containerized with Docker. CI/CD with GitHub Actions.
+A beginner-friendly production-style Student Management REST API built with Go, Gin, Docker, and GitHub Actions.
 
-## Tech Stack
-- Go + Gin
-- Docker (Multi-stage build)
-- GitHub Actions
+This project was created to learn:
+- Backend development with Go
+- REST API design
+- Docker containerization
+- CI/CD using GitHub Actions
+- Basic DevOps workflow
 
-## Run Without Docker
+![Go](https://img.shields.io/badge/Go-1.22-00ADD8?style=flat&logo=go&logoColor=white)
+![Gin](https://img.shields.io/badge/Gin-Framework-009688?style=flat)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+---
+
+# Overview
+
+Student API Go is a simple REST API that manages student data.
+
+The project demonstrates:
+- API development using Go and Gin
+- Docker multi-stage builds
+- Containerized applications
+- GitHub Actions CI pipeline
+- Clean beginner DevOps workflow
+  
+A simple but practical project focused on learning real-world backend and DevOps fundamentals.
+
+---
+
+# Features
+
+- REST API endpoints
+- JSON request and response handling
+- Docker support
+- Multi-stage Docker build
+- CI/CD with GitHub Actions
+- Lightweight project setup
+
+---
+
+# Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Go | Backend language |
+| Gin | Web framework |
+| Docker | Containerization |
+| GitHub Actions | CI/CD pipeline |
+
+---
+
+# Project Structure
+
 ```bash
-go run main.go
-```
+student-api-go/
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                # GitHub Actions pipeline
+│
+├── Dockerfile                   # Multi-stage Docker build
+├── .gitignore
+├── go.mod
+├── go.sum
+├── main.go                      # Main application entry point
+├── README.md
+└── LICENSE
 
-## Run With Docker
-```bash
-docker build -t student-api-go .
-docker run -p 8080:8080 student-api-go
-```
 
-## API Endpoints
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/students` | Get all students |
-| GET | `/api/students/:id` | Get by ID |
-| POST | `/api/students` | Add student |
-| DELETE | `/api/students/:id` | Delete student |
-
-## Author
-Prachi | 2nd Year CS | Learning DevOps 
