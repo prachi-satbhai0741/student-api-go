@@ -63,13 +63,14 @@ student-api-go/
 │   └── workflows/
 │       └── ci.yml                # GitHub Actions pipeline
 │
-├── Dockerfile                   # Multi-stage Docker build
+├── Dockerfile                    # Multi-stage Docker build
 ├── .gitignore
 ├── go.mod
 ├── go.sum
-├── main.go                      # Main application entry point
+├── main.go                       # Main application entry point
 ├── README.md
 └── LICENSE
+```
 
 ---
 
